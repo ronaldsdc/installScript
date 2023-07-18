@@ -208,7 +208,7 @@ if grep -rq raspberrypi.org /etc/apt/*; then
   # https://elinux.org/RPi_HardwareHistory
   if [[ "${rpivers:0:1}" =~ [0-9] ]] && [[ ! "${rpivers:0:3}" =~ 902 ]]; then
     echo "This RPi1 is not supported (not true armhf).  Exiting..."
-    exit 7
+    #exit 7
   fi
   rpi=1
   echo "Adding Debian signing keys..."
